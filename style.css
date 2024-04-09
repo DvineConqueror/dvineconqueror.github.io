@@ -33,6 +33,7 @@ body {
   z-index: -1;
 }
 
+
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -125,15 +126,17 @@ body {
 
 @media screen and (max-width: 768px) {
   .bg-video-container {
-    padding-bottom: 100%; /* Adjust the aspect ratio for smaller screens */
+    padding-bottom: 50%; /* Adjust the aspect ratio for smaller screens */
   }
 
   .text h1 {
+    margin-left: 2em;
     font-size: 8vw; /* Increase font size for better visibility on smaller screens */
   }
 
   .text h2 {
-    font-size: 4vw; /* Increase font size for better visibility on smaller screens */
+    margin-left: 5em;
+    font-size: 3vw; /* Increase font size for better visibility on smaller screens */
   }
 
   /* Existing code for .side-nav */
@@ -151,6 +154,8 @@ body {
   top: 0;
   left: 0;
   right: 0;
+  margin-top: 30px;
+  margin-right: 30px;
   padding: 10px; /* Add some padding as needed */
   z-index: 100; /* Ensure the top bar is on top of other elements */
   display: flex;
@@ -160,7 +165,7 @@ body {
 .top i{
   font-size: 1.4em;
   color: rgb(255, 255, 255);
-  padding: 14px 16px;
+  padding: 30px 30px;
 }
 
 .top i:hover{
@@ -191,6 +196,7 @@ body {
 .active .nav-text{
   color: red;
 }
+
 
 .nav-text {
   font-family: "Audiowide", sans-serif;
@@ -223,7 +229,7 @@ nav:hover .nav-text {
 .side-nav:hover {
   width: 19rem; /* 320px */
   .topNav{
-    margin-top: -24vh;
+    margin-top: -28vh;
     margin-right: 3000px;
     top: 0;
     width: 19rem;
