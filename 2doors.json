@@ -42,7 +42,7 @@
         "Porsche911-img2":"resources/2doors/porsche 911 GT3 RS/blobid0-Photoroom.png-Photoroom.png",
         "Porsche911-insideimg":"resources/2doors/porsche 911 GT3 RS/2_Porsche_911_GT3_RS-removebg-preview.png",
         "ModelName":"Porsche 911 GT3 RS",
-        "Price":"₱22,999,999",
+        "Price":"₱31,999,999",
         "Description":"The most extreme Porsche 911 ever produced. This new GT3 RS isn't just inspired by motorsport, it's a full-blown race car",
         "stats":"The Porsche 911 GT3 RS is powered by a High reving 4.0 naturally aspirated flat 6 engine, delivering 525 horsepower and 465 Nm of torque. With such power, it can achieve a top speed of 184 mph."
     },
@@ -54,6 +54,7 @@
         "LamborghiniHuracan-cover":"resources/2doors/Lamborghini Huracan Performante/row_1548-Photoroom.png-Photoroom.png",
         "Lamborghinihuracan-insideimg":"resources/2doors/Lamborghini Huracan Performante/inside.png",
         "ModelName":"Lamborghini Huracan Performante",
+        "Price":"₱30,999,999",
         "Description":"The Huracán Performante has reworked the concept of super sports cars and taken the notion of performance to levels never seen before. ",
         "stats":"The Lamborghini huracan performante is equipped with a naturally aspirated V10 engine, producing an impressive 640 horsepower and 600 Nm of torque, enabling it to reach a top speed of 201 mph."
     },
