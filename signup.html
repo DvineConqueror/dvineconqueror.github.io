@@ -113,13 +113,13 @@
                 <button type="button" class="toggle-btn" onclick="login()">Log-in</button>
                 <button type="button" class="toggle-btn" onclick="signup()">Sign up</button>
             </div>
-            <form id="login-form" class="input-group">
+            <form id="login-form" class="input-group" method="POST" action="form.php">
                 <input type="text" class="input-field" placeholder="Email Address" required>
                 <input type="text" class="input-field" placeholder="Password" required>
                 <input type="checkbox" class="check"><span>Remember Password</span>
                 <button type="submit" class="submit-btn">Log in</button>
             </form>
-            <form id="Sign-up-form" class="input-group">
+            <form id="Sign-up-form" class="input-group" method="POST" action="form.php">
                 <input type="text" class="input-field" placeholder="Email Address" required>
                 <input type="text" class="input-field" placeholder="Password" required>
                 <input type="text" class="input-field" placeholder=" Confirm Password" required>

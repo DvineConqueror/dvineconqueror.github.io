@@ -1,0 +1,74 @@
+[
+    {
+        "Ferrarilaf-sideimage": "resources/2doors/Ferrari Laferrari/Side.png",
+        "Ferrarilaf-frontimage": "resources/2doors/Ferrari Laferrari/front.png",
+        "Ferrarilaf-backimage": "resources/2doors/Ferrari Laferrari/Back.png",
+        "Ferrarilaf-image": "resources/2doors/Ferrari Laferrari/Cover.png",
+        "Ferrarilaf-interior": "resources/2doors/Ferrari Laferrari/inside.png",
+        "ModelName": "Ferrari LaFerrari",
+        "price": "  ₱57,999,999 ",
+        "Description": "The LaFerrari is the first production car to ever be equipped with an F1-derived hybrid solution and combines a powerful electric motor with the classic Ferrari V12 engine.",
+        "stats":"The vehicle is equipped with a naturally aspirated 6.3L V12 engine complemented by a 120kW electric motor, generating a total of 949 horsepower at 9,000 rpm and 900 Nm of torque, enabling it to reach a top speed of 218 mph."
+
+    },
+    {
+        "Ferrari488-sideImage": "resources/2doors/Ferrai 488 Pista/side.png",
+        "Ferrari488-frontImage": "resources/2doors/Ferrai 488 Pista/front.png",
+        "Ferrari488-backImage": "resources/2doors/Ferrai 488 Pista/Back.png",
+        "Ferrari488-coverImage": "resources/2doors/Ferrai 488 Pista/Cover.png",
+        "Ferrari488-insideImage": "resources/2doors/Ferrai 488 Pista/Inside.png",
+        "ModelName": "Ferrari 488 Pista",
+        "Price": "₱20,000,000",
+        "Description": "The Ferrari 488 Pista is powered by the most powerful V8 engine in the Maranello marque’s history and is the company’s special series sports car with the highest level yet of technological transfer from racing.",
+        "stats": "The car features a twin-turbocharged 32-valve V8 engine producing 720 horsepower and 770 Nm of torque, allowing it to reach a top speed of 211 mph."
+        
+    },
+    {
+      "Lamborghinirevuelto-sideimg":"resources/2doors/Lamborghini Revuelto/side-left.png",
+      "Lamborghinirevuelto-frontimg":"resources/2doors/Lamborghini Revuelto/front.png",
+      "Lamborghinirevuelto-backimg":"resources/2doors/Lamborghini Revuelto/side.png",
+      "Lamborghinirevuelto-img":"resources/2doors/Lamborghini Revuelto/Lamborghini-Revuelto-A_o-Photoroom.png-Photoroom.png",
+      "Lamborghinirevuelto-insideimg":"resources/2doors/Lamborghini Revuelto/inside.png",
+      "ModelName": "Ferrari 488 Pista",
+        "Price": "₱35,000,000",
+        "Description": "The Revuelto combines classic Lamborghini proportions with strong, sculpted lines that promise a new future. ",
+        "stats": "The Lamborghini Revuelto is equipped with a high reving V12 hybrid engine, boasting an impressive output of 1050 horsepower and 725 Nm of torque, enabling it to achieve a top speed of 217 mph."
+    },
+    {
+        "Porsche911-sideimg": "resources/2doors/porsche 911 GT3 RS/porsche-911-gt3-rs-white-green-002-Photoroom.png-Photoroom.png",
+        "Porsche911-frontimg":"resources/2doors/porsche 911 GT3 RS/2023-Porsche-911-GT3-RS-Monterey-Show-Car-Front-Photoroom.png-Photoroom.png",
+        "Porsche911-backimg":"resources/2doors/porsche 911 GT3 RS/Porsche-911-GT3-RS-Photoroom.png-Photoroom.png",
+        "Porsche911-img":"resources/2doors/porsche 911 GT3 RS/GT3RS_TRIBUTE_TO_CARRERA_RS_005_DSC03236_hero-Photoroom.png-Photoroom.png",
+        "Porsche911-img2":"resources/2doors/porsche 911 GT3 RS/blobid0-Photoroom.png-Photoroom.png",
+        "Porsche911-insideimg":"resources/2doors/porsche 911 GT3 RS/2_Porsche_911_GT3_RS-removebg-preview.png",
+        "ModelName":"Porsche 911 GT3 RS",
+        "Price":"₱31,999,999",
+        "Description":"The most extreme Porsche 911 ever produced. This new GT3 RS isn't just inspired by motorsport, it's a full-blown race car",
+        "stats":"The Porsche 911 GT3 RS is powered by a High reving 4.0 naturally aspirated flat 6 engine, delivering 525 horsepower and 465 Nm of torque. With such power, it can achieve a top speed of 184 mph."
+    },
+    {
+        "Lamborghinihuracan-sideimg":"resources/2doors/Lamborghini Huracan Performante/side.png",
+        "Lamborghinihuracan-frontimg":"resources/2doors/Lamborghini Huracan Performante/front.png",
+        "Lamborghinihuracan-backimg":"resources/2doors/Lamborghini Huracan Performante/back.png",
+        "Lamborghinihuracan-img":"resources/2doors/Lamborghini Huracan Performante/cover.png",
+        "LamborghiniHuracan-cover":"resources/2doors/Lamborghini Huracan Performante/row_1548-Photoroom.png-Photoroom.png",
+        "Lamborghinihuracan-insideimg":"resources/2doors/Lamborghini Huracan Performante/inside.png",
+        "ModelName":"Lamborghini Huracan Performante",
+        "Price":"₱30,999,999",
+        "Description":"The Huracán Performante has reworked the concept of super sports cars and taken the notion of performance to levels never seen before. ",
+        "stats":"The Lamborghini huracan performante is equipped with a naturally aspirated V10 engine, producing an impressive 640 horsepower and 600 Nm of torque, enabling it to reach a top speed of 201 mph."
+    },
+    {
+        "MclarenSenna-sideimg":"resources/2doors/Mclaren Senna/aa76077c-Photoroom.png-Photoroom.png",
+        "MclarenSenna-frontimg":"resources/2doors/Mclaren Senna/z.png",
+        "MclarenSenna-backimg":"resources/2doors/Mclaren Senna/63b5e9f3561b2na_06-Photoroom.png-Photoroom.png",
+        "MclarenSenna-img":"resources/2doors/Mclaren Senna/cover.png",
+        "MclarenSenna-img2":"resources/2doors/Mclaren Senna/mclaren_senna_victory_grey_19-Photoroom.png-Photoroom.png",
+        "MclarenSenna-insideimg":"resources/2doors/Mclaren Senna/Used-2019-McLaren-Senna-Coupe-Liquid-Silver-Bespoke-Interior-TONS-of-Carbon-100K-in-Options-removebg-preview.png",
+        "ModelName":"Mclaren Senna",
+        "Price":"₱50,000,000",
+        "Description":"It is the fastest track-focused road hypercar we have ever built, and it will set the fastest lap times of any McLaren to date. That is what has driven us to build a track car that is unashamedly without compromise.",
+        "Stats":"The McLaren Senna features a powerful 4.0-liter twin-turbo V8 engine, delivering an impressive 800 horsepower and 800 Nm of torque. With such power, it can achieve a top speed of 208 mph."
+    }
+
+]
