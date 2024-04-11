@@ -29,7 +29,10 @@
       </div>
 
       <div class="top">
-        <i class="fa fa-search"></i>
+        <div class="search-container">
+          <i class="fa fa-search" id="search-icon"></i>
+          <input type="text" id="search-input" placeholder="Search...">
+        </div>
         <i class="fa fa-user"></i>
         <i class="fa fa-shopping-cart"></i>
       </div>
@@ -43,91 +46,69 @@
           <div class="card">
             <img src="resources/2doors/Bmw M4 CSL/Cover Photo.png" alt="">
             <div class="card-content">
-              <h1>Car1</h1>
-              <a href="#" class="card-button">Purchase</a>
+              <h1>Bmw M4 CSL</h1>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
             </div>
           </div>
           <div class="card">
-            <img src="resources/2doors/Bmw M4 CSL/Cover Photo.png" alt="">
+            <img src="resources/2doors/Bugatti Chiron/Cover.png" alt="">
             <div class="card-content">
-              <h1>Car1</h1>
-              <a href="#" class="card-button">Purchase</a>
+              <h1>Bugatti Chiron</h1>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
             </div>
           </div>
           <div class="card">
-            <img src="resources/2doors/Bmw M4 CSL/Cover Photo.png" alt="">
+            <img src="resources/2doors/Ferrai 488 Pista/Cover.png" alt="">
             <div class="card-content">
-              <h1>Car1</h1>
-              <a href="#" class="card-button">Purchase</a>
+              <h1>Ferrai 488 Pista</h1>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
             </div>
           </div>
           <div class="card">
-            <img src="resources/2doors/Bmw M4 CSL/Cover Photo.png" alt="">
+            <img src="resources/2doors/Lamborghini Revuelto/cover.png" alt="">
             <div class="card-content">
-              <h1>Car1</h1>
-              <a href="#" class="card-button">Purchase</a>
+              <h1>Lamborghini Huracan Performante</h1>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
             </div>
           </div>
           <div class="card">
-            <img src="resources/2doors/Bmw M4 CSL/Cover Photo.png" alt="">
+            <img src="resources/2doors/koenigsegg jesko/cover.png" alt="">
             <div class="card-content">
-              <h1>Car1</h1>
-              <a href="#" class="card-button">Purchase</a>
+              <h1>Koenigsegg Jesko</h1>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
             </div>
           </div>
           <div class="card">
-            <img src="resources/2doors/Bmw M4 CSL/Cover Photo.png" alt="">
+            <img src="resources/2doors/Lamborghini Huracan Performante/cover.png" alt="">
             <div class="card-content">
-              <h1>Car1</h1>
-              <a href="#" class="card-button">Purchase</a>
+              <h1>Lamborghini Performante</h1>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
             </div>
           </div>
-
-
-
-          <div class="card">
-            <img src="resources/2doors/Bmw M4 CSL/Cover Photo.png" alt="">
-            <div class="card-content">
-              <h1>Car1</h1>
-              <a href="#" class="card-button">Purchase</a>
-            </div>
-          </div>
-          <div class="card">
-            <img src="resources/2doors/Bmw M4 CSL/Cover Photo.png" alt="">
-            <div class="card-content">
-              <h1>Car1</h1>
-              <a href="#" class="card-button">Purchase</a>
-            </div>
-          </div>
-          <div class="card">
-            <img src="resources/2doors/Bmw M4 CSL/Cover Photo.png" alt="">
-            <div class="card-content">
-              <h1>Car1</h1>
-              <a href="#" class="card-button">Purchase</a>
-            </div>
-          </div>
-          <div class="card">
-            <img src="resources/2doors/Bmw M4 CSL/Cover Photo.png" alt="">
-            <div class="card-content">
-              <h1>Car1</h1>
-              <a href="#" class="card-button">Purchase</a>
-            </div>
-          </div>
-          <div class="card">
-            <img src="resources/2doors/Bmw M4 CSL/Cover Photo.png" alt="">
-            <div class="card-content">
-              <h1>Car1</h1>
-              <a href="#" class="card-button">Purchase</a>
-            </div>
-          </div>
-          <div class="card">
-            <img src="resources/2doors/Bmw M4 CSL/Cover Photo.png" alt="">
-            <div class="card-content">
-              <h1>Car1</h1>
-              <a href="#" class="card-button">Purchase</a>
-            </div>
-          </div>
-        </div>
 
       </div>
     </div>
@@ -227,6 +208,21 @@
         document.documentElement.scrollTop = 0;
       }
     </script>
+
+    <script>
+      const searchIcon = document.getElementById('search-icon');
+      const searchInput = document.getElementById('search-input');
+
+      searchIcon.addEventListener('click', function() {
+        searchInput.classList.toggle('expanded');
+        if (searchInput.classList.contains('expanded')) {
+          searchInput.focus();
+        } else {
+          searchInput.value = '';
+        }
+      });
+    </script>
+
     <script src="scroll-script.js"></script>
     <script src="script.js"></script>
 </body>

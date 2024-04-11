@@ -126,26 +126,36 @@ body {
 
 @media screen and (max-width: 768px) {
   .bg-video-container {
-    padding-bottom: 50%; /* Adjust the aspect ratio for smaller screens */
+    position: relative;
+    width: 100%;
+    height: 35vh;
+    padding-bottom: 0; /* Adjust the aspect ratio for smaller screens */
+    transform: scale(1.1); /* Adjust the value to zoom in or out */
   }
 
   .text h1 {
     margin-left: 2em;
-    font-size: 8vw; /* Increase font size for better visibility on smaller screens */
+    font-size: 7vw; /* Increase font size for better visibility on smaller screens */
   }
 
   .text h2 {
-    margin-left: 5em;
-    font-size: 3vw; /* Increase font size for better visibility on smaller screens */
+    margin-left: 3em;
+    font-size: 2.6vw; /* Increase font size for better visibility on smaller screens */
   }
 
   /* Existing code for .side-nav */
   .side-nav {
-    background-color: #d5d5d5; /* Replace with your desired background color */
-    color: #fff;
-    width: 6rem; /* 96px */
-    transition: width 0.3s ease-in-out; /* Add transition for width */
-    overflow: hidden; /* Hide overflowing content initially */
+    background-color: #790c0c; /* Replace with your desired background color */
+  color: #fff;
+  height: 6rem; /* Set the height of the bottom navigation bar */
+  position: fixed; /* Position the navigation bar at the bottom of the viewport */
+  bottom: 0; /* Align the navigation bar to the bottom */
+  left: 0; /* Align the navigation bar to the left */
+  width: 100%; /* Set the width of the navigation bar */
+  display: flex; /* Use flexbox for alignment */
+  justify-content: space-around; /* Align items evenly */
+  align-items: center; /* Center items vertically */
+  z-index: 1000;
   }
 }
 
@@ -164,13 +174,42 @@ body {
 
 .top i{
   font-size: 1.4em;
-  color: rgb(255, 255, 255);
+  color: rgb(185, 0, 0);
   padding: 30px 30px;
 }
 
 .top i:hover{
   transition: 0.6s;
-  color: red;
+  color: rgb(142, 15, 15);
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#search-input {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #666666;
+  transform: translate(-100px );
+  border-radius: 20px;
+  width: 0;
+  transition: width 0.3s ease-in-out;
+}
+
+#search-input.expanded {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  width: 200px; /* Adjust the width as needed */
+  height: 30px;
+}
+
+.fa-search {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
 }
 
 .icon1 img{
@@ -197,6 +236,9 @@ body {
   color: red;
 }
 
+.active-icon {
+  filter: brightness(0) saturate(100%) invert(12%) sepia(100%) saturate(7480%) hue-rotate(359deg);
+}
 
 .nav-text {
   font-family: "Audiowide", sans-serif;
