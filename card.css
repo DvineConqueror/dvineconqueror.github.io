@@ -34,14 +34,27 @@
   background-color: rgba(255, 255, 255, 0.12);
 }
 
+.heading {
+  font-family: "Audiowide", sans-serif;
+  font-size: 70px;
+  z-index: 1;
+  position: relative;
+  color: white;
+  text-align: center;
+  transform: translateY(-350px);
+  margin-left: 120px;
+  margin-top: 0rem; /* Add some spacing above the heading */
+  margin-bottom: 2rem; /* Add some spacing below the heading */
+}
+
 .cards {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
   margin: 0;
-  margin-top: -37.375em;
-  margin-left: 320px; /* This line is modified */
+  margin-top: -350px; /* Remove the negative margin-top */
+  margin-left: 320px; /* Remove the left margin */
   padding: 0 1rem; /* This line is added */
   width: 70%;
 }
@@ -68,6 +81,11 @@
 @media screen and (max-width:768px) {
   .cards{
     margin-left: 90px;
+  }
+
+  .heading{
+    margin-left: 32px;
+    font-size: 52px;
   }
 }
 
@@ -130,3 +148,41 @@
   margin-bottom: 1.25rem;    
   font-weight: 400;
 }
+
+.FourDoorCars{
+  margin-top: 600px; /* Remove the negative margin-top */
+}
+
+.motorcycles{
+  margin-top: 600px; /* Remove the negative margin-top */
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOutAnimation {
+  0% {
+    opacity: 1;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.card-match .card {
+  animation: fadeInAnimation 0.3s ease-in-out;
+}
+
+.card-match.hide .card {
+  animation: fadeOutAnimation 0.9s ease-in-out;
+}
+
