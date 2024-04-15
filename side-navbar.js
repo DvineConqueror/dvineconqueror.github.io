@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const sections = document.querySelectorAll('section[id]');
   const toggleNav = document.getElementById('toggle-nav');
   const sideNav = document.querySelector('.side-nav');
+  const navItems = document.querySelectorAll('.mobile-nav .nav-item');
 
   const toggleSideNav = () => {
     sideNav.classList.toggle('closed');
@@ -27,6 +28,18 @@ document.addEventListener('DOMContentLoaded', () => {
   toggleNav.addEventListener('click', (event) => {
     event.stopPropagation();
     toggleSideNav();
+  });
+
+  navItems.forEach(function(navItem) {
+    navItem.addEventListener('click', function() {
+      // Remove the 'active' class from all navigation items
+      navItems.forEach(function(item) {
+        item.classList.remove('active');
+      });
+
+      // Add the 'active' class to the clicked navigation item
+      this.classList.add('active');
+    });
   });
 
   sideNav.addEventListener('mouseover', () => handleHoverNav(true));
