@@ -1,0 +1,22 @@
+
+
+.slider{
+  position: fixed;
+}
+.single-pro-image{
+  width: 650px;
+  margin-top: 120px;
+  margin-left: 100px;
+}
+
+.small-img-group{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 160px;
+  width: 500px;
+}
+
+.small-img-col{
+  flex-basis: 24%;
+  cursor: pointer;
+}
