@@ -1,0 +1,43 @@
+
+
+.slider{
+  position: fixed;
+}
+.single-pro-image{
+  width: 650px;
+  margin-top: 120px;
+  margin-left: 100px;
+}
+
+.small-img-group{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 160px;
+  width: 500px;
+}
+
+.small-img-col{
+  flex-basis: 24%;
+  cursor: pointer;
+}
+
+#contentSection
+{
+    height: 350px;
+    width: 300px;
+    position: absolute;
+    left:  60%;
+    top: calc(50% - 200px);
+}
+#contentSection h2
+{
+    font-family: 'cool';
+    font-size: 70px;
+    color: white;
+    font-weight: 900;
+}
+#contentSection p
+{
+    padding: 0 0 0 20px;
+    color: white;
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="buypage.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="card.css">
+    <link rel="icon" href="resources/LM-icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/5e0c6ec25d.js" crossorigin="anonymous"></script>
+    <script src="side-navbar.js"></script>
+    <script src="script.js"></script>
+  <script src="buypage.js" defer></script>
+  <title>Document</title>
+</head>
+<body>
+<div class="slider">
+    <div class="single-pro-image"> 
+        <img src="resources/2doors/Bmw M4 CSL/Back.png" width="100%"  id="Main">
+    </div>
+    <div class="small-img-group">
+        <div class="small-img-col">
+            <img src="resources/2doors/Mclaren 765lt/1j6a7866-edit-Photoroom.png-Photoroom.png"  class="small-img" alt="">
+        </div>
+        <div class="small-img-col">
+            <img src="resources/2doors/Bugatti Chiron/Back.png" width="100%" class="small-img" alt="">
+        </div>
+        <div class="small-img-col">
+            <img src="resources/2doors/Ferrai 488 Pista/Cover.png" width="100%" class="small-img" alt="">
+        </div>
+        <div class="small-img-col">
+            <img src="resources/2doors/Ferrari Laferrari/Back.png" width="100%" class="small-img" alt="">
+        </div>
+        <div class="small-img-col">
+            <img src="resources/2doors/Bmw M4 CSL/Back.png" width="100%" class="small-img" alt="">
+        </div>
+    </div>
+    </div>
+</div>
+
+    <div class="top">
+        <div class="search-container">
+          <i class="fa fa-search" id="search-icon"></i>
+          <input type="text" id="search-input" onkeyup="searchFunction()" placeholder="Search...">
+        </div>
+        <i class="fa fa-user"></i>
+        <i class="fa fa-shopping-cart"></i>
+      </div>
+
+      <div class="container">
+
+        <div class="bg-img">
+          <img src="resources/background.png" alt="Background Image">
+        </div>
+  
+        <div id="contentSection">
+            <h2>FERRARI  LAFERRARI</h2>
+            <p>The Ferrari LaFerrari is one of the fastest cars ever made. It has a 6. 3-liter V12 engine that produces 950 horsepower and 516 lb-ft of torque. This power is sent to the rear wheels through a seven-speed dual-clutch transmission</p>
+
+  <div class="fixed top-0 left-0 flex h-screen">
+    <nav class="side-nav">
+        <ul class="flex flex-col justify-center h-screen space-y-10">
+          <div class="topNav">
+            <section id="home-section">
+              <li>
+                  <a class="flex items-start">
+                      <svg id="toggle-nav" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="250" height="50" fill="currentColor" className="w-6 h-6" class="double-arrow">
+                          <path fillRule="evenodd" d="M10.72 11.47a.75.75 0 0 0 0 1.06l7.5 7.5a.75.75 0 1 0 1.06-1.06L12.31 12l6.97-6.97a.75.75 0 0 0-1.06-1.06l-7.5 7.5Z" clipRule="evenodd" />
+                          <path fillRule="evenodd" d="M4.72 11.47a.75.75 0 0 0 0 1.06l7.5 7.5a.75.75 0 1 0 1.06-1.06L6.31 12l6.97-6.97a.75.75 0 0 0-1.06-1.06l-7.5 7.5Z" clipRule="evenodd" />
+                        </svg>                              
+                      <span class="whitespace-nowrap text-2xl ml-4 nav-text text-red-600 duration-200 absolute" id="up-level"><br>Legendary<br>Motorsports</span>
+                  </a>
+              </li>
+            </section>  
+          </div>
+              <li>
+                  <a href="#top" class="flex items-start hover:text-red-600 relative active home">
+                      <span class="icon-container">
+                          <i class="icon icon1">
+                              <img src="resources/icons/home-icon.png" alt="" class="w-8 h-8">
+                          </i>
+                      </span>
+                      <span class="whitespace-nowrap text-2xl ml-4 nav-text hidden duration-200 absolute left-12">Home</span>
+                  </a>
+              </li>
+            <section id="2door-section">
+              <li>
+                  <a href="#2DoorCars" class="flex items-start hover:text-red-600 relative">
+                      <span class="icon-container">
+                          <i class="icon icon2">
+                              <img src="resources/icons/2-door-icon.png" alt="" class="w-8 h-8">
+                          </i>
+                      </span>
+                      <span class="whitespace-nowrap text-2xl ml-4 nav-text hidden duration-200 absolute left-12">2 Door</span>
+                  </a>
+              </li>
+            </section>
+            <section id="4door-section">
+              <li>
+                  <a href="#4DoorCars" class="flex items-start hover:text-red-600 relative">
+                      <span class="icon-container">
+                          <i class="icon icon2">
+                              <img src="resources/icons/4-door-icon.png" alt="" class="w-8 h-8">
+                          </i>
+                      </span>
+                      <span class="whitespace-nowrap text-2xl ml-24 nav-text hidden duration-200 absolute left-12">  4 Door</span>
+                  </a>
+              </li>
+            </section> 
+            <section id="motorcycle-section">
+              <li>
+                  <a href="#Motorcles" class="flex items-start hover:text-red-600 relative">
+                      <span class="icon-container">
+                          <i class="icon icon2">
+                              <img src="resources/icons/motorcycle-icon.png" alt="" class="w-8 h-8">
+                          </i>
+                      </span>
+                      <span class="whitespace-normal text-2xl ml-4 nav-text hidden duration-200 absolute left-12">Motorcycle</span>
+                  </a>
+              </li>
+            </section>
+            <section id="about-section">
+              <li>
+                  <a href="#About-Us" class="flex items-start hover:text-red-600 relative">
+                      <span class="icon-container">
+                          <i class="icon icon1">
+                              <img src="resources/icons/about-icon.png" alt="" class="w-8 h-8">
+                          </i>
+                      </span>
+                      <span class="whitespace-nowrap text-2xl ml-4 nav-text hidden duration-200 absolute left-12">About Us</span>
+                  </a>
+              </li>
+            </section>
+        </ul>
+    </nav>
+</div>
+<script>
+    var MainImg = document.getElementById("Main")
+    var smallimg = document.getElementsByClassName("small-img")
+
+    smallimg[0].onclick = function(){
+        MainImg.src = smallimg[0].src
+    }
+
+    smallimg[1].onclick = function(){
+        MainImg.src = smallimg[1].src
+    }
+
+    smallimg[2].onclick = function(){
+        MainImg.src = smallimg[2].src
+    }
+
+    smallimg[3].onclick = function(){
+        MainImg.src = smallimg[3].src
+    }
+    smallimg[4].onclick = function(){
+        MainImg.src = smallimg[4].src
+    }
+
+
+    
+</script>
+  <script>
+    const searchIcon = document.getElementById('search-icon');
+    const searchInput = document.getElementById('search-input');
+
+    searchIcon.addEventListener('click', function() {
+      searchInput.classList.toggle('expanded');
+      if (searchInput.classList.contains('expanded')) {
+        searchInput.focus();
+      } else {
+        searchInput.value = '';
+      }
+    });
+  </script>
+
+  <script src="scroll-script.js"></script>
+</body>
+</html>
