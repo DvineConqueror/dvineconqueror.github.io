@@ -203,6 +203,12 @@ body {
   }
 }
 
+@media screen and (min-width: 768px){
+  .mobile-nav{
+    display: none;
+  }
+}
+
 .top{
   position: fixed;
   top: 0;
@@ -260,16 +266,19 @@ body {
   width: 40px;
   height: 40px;
   margin-left: 7px;
-  filter: invert(1);
+  filter: invert(1) opacity(100%);
 }
 
 .icon2 img{
   width: 55px;
   height: 55px;
-  filter: invert(1);
+  filter: invert(1) opacity(100);
 }
 
 .icon-container {
+  background: var(--bg-secondary);
+  filter: opacity(100%);
+  opacity: 100%;
   padding-left: 20px;
   display: flex;
   justify-content: center;
@@ -303,19 +312,24 @@ body {
 }
 
 nav:hover .nav-text {
+  text-shadow: 5px 5px 5px #000000;
   margin-left: 40px;
   display: inline-block;
   opacity: 1;
   transition: 0.5s;
+  
 }
 
+
 .side-nav {
-  background-color: #790c0c; /* Replace with your desired background color */
+  opacity: 0.9;
+  background: var(--bg-secondary);
   color: #fff;
   width: 6rem; /* 96px */
   transition: width 0.3s ease-in-out; /* Add transition for width */
   overflow: hidden; /* Hide overflowing content initially */
   z-index: 1000 !important;
+  transition: 0.4s;
 }
 
 .side-nav.original{
@@ -323,14 +337,15 @@ nav:hover .nav-text {
 }
 
 .side-nav:hover {
+  opacity: 1;
+  background-color: #111111; /* Replace with your desired background color */
   width: 19rem; /* 320px */
   .topNav{
-    margin-top: -28vh;
+    margin-top: -27vh;
     margin-right: 3000px;
     top: 0;
     width: 19rem;
     height: 210px;
-    background-color: gray;
     opacity: 1;
     transition: 0.2s ease-in-out;
   }
@@ -342,14 +357,15 @@ nav:hover .nav-text {
 
 #up-level{
   text-align: center;
-  margin-top:9vh;
+  margin-top:5vh;
+  margin-bottom: 10vh;
   margin-left: 55px;
   color: white;
 }
 
 .double-arrow{
   margin-left: 230px;
-  margin-top: 110px;
+  margin-top: 90px;
 }
 
 .double-arrow:hover{
