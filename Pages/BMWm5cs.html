@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="carousel.css">
+  <link rel="icon" href="../resources/LM-icon.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+25&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Racing+Sans+One&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/5e0c6ec25d.js" crossorigin="anonymous"></script>
+  <script src="../side-navbar.js"></script>
+  <script src="carousel.js"></script>
+  <script src="../script.js"></script>
+  <title>Legendary Motorsports</title>
+</head>
+<body>
+
+      <div class="container">
+        <div class="bg-img">
+          <img src="../resources/background.png" alt="Background Image">
+        </div>
+
+        <div class="carousel-container">
+          <div class="card-container">
+            <div class="main-card-container">
+              <div class="main main-card" id="mainCard">
+                <img src="../resources/4doors/BMW M5 CS/cover.png" alt="Image 1">
+              </div>
+            </div>
+            <div class="carousel" id="carousel">
+              <div class="card" onclick="changeMainImage(this)">
+                <img src="../resources/4doors/BMW M5 CS/side back.png" alt="Image 2">
+              </div>
+              <div class="card" onclick="changeMainImage(this)">
+                <img src="../resources/4doors/BMW M5 CS/side.png" alt="Image 3">
+              </div>
+              <div class="card" onclick="changeMainImage(this)">
+                <img src="../resources/4doors/BMW M5 CS/interior.png" alt="Image 4">
+              </div>
+              <div class="card" onclick="changeMainImage(this)">
+                <img src="../resources/4doors/BMW M5 CS/front.png" alt="Image 5">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-description">
+          <h1>BMW M5 CS</h1>
+          <p>The BMW M5 CS is the top-tier variant of the M5 lineup, boasting exceptional performance, luxury, and exclusivity. It features a powerful engine, precise handling, and aggressive styling cues. The interior offers premium materials and advanced technology, tailored for driver engagement and comfort. Limited in production, it's a sought-after model for enthusiasts seeking the ultimate driving experience.</p>
+          <h3>Stats</h3>
+          <ul>
+            <div class="stats-container">
+              <div class="stat">
+                <span class="stat-label">Horsepower</span>
+                <span class="stat-value">627HP</span>
+                <progress class="stat-progress" max="100" value="62"></progress>
+              </div>
+              <div class="stat">
+                <span class="stat-label">Torque</span>
+                <span class="stat-value">750Nm</span>
+                <progress class="stat-progress" max="100" value="75"></progress>
+              </div>
+              <div class="stat">
+                <span class="stat-label">RPM</span>
+                <span class="stat-value">6000</span>
+                <progress class="stat-progress" max="100" value="60"></progress>
+              </div>
+              <div class="stat">
+                <span class="stat-label">Top speed</span>
+                <span class="stat-value">309Kph</span>
+                <progress class="stat-progress" max="100" value="67"></progress>
+              </div>
+            </div>          
+          </ul>
+        </div>        
+        
+      </div>
+  
+  <div class="fixed top-0 left-0 flex h-screen">
+    <nav class="side-nav">
+        <ul class="flex flex-col justify-center h-screen space-y-10">
+          <div class="topNav">
+            <section id="home-section">
+              <li>
+                  <a class="flex items-start">
+                      <svg id="toggle-nav" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="250" height="50" fill="currentColor" className="w-6 h-6" class="double-arrow">
+                          <path fillRule="evenodd" d="M10.72 11.47a.75.75 0 0 0 0 1.06l7.5 7.5a.75.75 0 1 0 1.06-1.06L12.31 12l6.97-6.97a.75.75 0 0 0-1.06-1.06l-7.5 7.5Z" clipRule="evenodd" />
+                          <path fillRule="evenodd" d="M4.72 11.47a.75.75 0 0 0 0 1.06l7.5 7.5a.75.75 0 1 0 1.06-1.06L6.31 12l6.97-6.97a.75.75 0 0 0-1.06-1.06l-7.5 7.5Z" clipRule="evenodd" />
+                        </svg>                              
+                      <span class="whitespace-nowrap text-2xl ml-4 nav-text text-red-600 duration-200 absolute" id="up-level"><br>Legendary<br>Motorsports</span>
+                  </a>
+              </li>
+            </section>  
+          </div>
+              <li>
+                  <a href="../index.html" class="flex items-start hover:text-red-600 relative">
+                      <span class="icon-container">
+                          <i class="icon icon1">
+                              <img src="../resources/icons/home-icon.png" alt="" class="w-8 h-8">
+                          </i>
+                      </span>
+                      <span class="whitespace-nowrap text-2xl ml-4 nav-text hidden duration-200 absolute left-12">Home</span>
+                  </a>
+              </li>
+            <section id="2door-section">
+              <li>
+                  <a href="../index.html#2DoorCars" class="flex items-start hover:text-red-600 relative">
+                      <span class="icon-container">
+                          <i class="icon icon2">
+                              <img src="../resources/icons/2-door-icon.png" alt="" class="w-8 h-8">
+                          </i>
+                      </span>
+                      <span class="whitespace-nowrap text-2xl ml-4 nav-text hidden duration-200 absolute left-12">2 Door</span>
+                  </a>
+              </li>
+            </section>
+            <section id="4door-section">
+              <li>
+                  <a href="../index.html#4DoorCars" class="flex items-start hover:text-red-600 relative">
+                      <span class="icon-container">
+                          <i class="icon icon2">
+                              <img src="../resources/icons/4-door-icon.png" alt="" class="w-8 h-8">
+                          </i>
+                      </span>
+                      <span class="whitespace-nowrap text-2xl ml-24 nav-text hidden duration-200 absolute left-12">  4 Door</span>
+                  </a>
+              </li>
+            </section> 
+            <section id="motorcycle-section">
+              <li>
+                  <a href="../index.html#Motorcles" class="flex items-start hover:text-red-600 relative">
+                      <span class="icon-container">
+                          <i class="icon icon2">
+                              <img src="../resources/icons/motorcycle-icon.png" alt="" class="w-8 h-8">
+                          </i>
+                      </span>
+                      <span class="whitespace-normal text-2xl ml-4 nav-text hidden duration-200 absolute left-12">Motorcycle</span>
+                  </a>
+              </li>
+            </section>
+            <section id="about-section">
+              <li>
+                  <a href="../index.html#About-Us" class="flex items-start hover:text-red-600 relative">
+                      <span class="icon-container">
+                          <i class="icon icon1">
+                              <img src="../resources/icons/about-icon.png" alt="" class="w-8 h-8">
+                          </i>
+                      </span>
+                      <span class="whitespace-nowrap text-2xl ml-4 nav-text hidden duration-200 absolute left-12">About Us</span>
+                  </a>
+              </li>
+            </section>
+        </ul>
+    </nav>
+
+    <nav class="mobile-nav">
+      <a href="#2DoorCars" class="nav-item" id="nav-2door">
+        <i class="icon icon2">
+          <img src="../resources/icons/2-door-icon.png" alt="" class="w-8 h-8">
+        </i>
+      </a>
+      <a href="#4DoorCars" class="nav-item" id="nav-4door">
+        <i class="icon icon2">
+          <img src="../resources/icons/4-door-icon.png" alt="" class="w-8 h-8">
+        </i>
+      </a>
+      <a href="#top" class="nav-item active" id="nav-home">
+        <i class="icon fa fa-home" style="font-size: 30px;"></i>
+      </a>
+      <a href="#Motorcles" class="nav-item" id="nav-motorcycle">
+        <i class="icon icon2">
+          <img src="../resources/icons/motorcycle-icon-inverted.png" alt=""" class="w-8 h-8" style="width: auto; height: 40px;">
+        </i>
+      </a>
+      <a href="#About-Us" class="nav-item" id="nav-about">
+        <i class="icon icon2">
+          <img src="../resources/icons/about-icon.png" alt="" class="w-8 h-8" style="width: auto; height: 30px;">
+        </i>
+      </a>
+    </nav>
+
+</div>
+</body>
+</html>
