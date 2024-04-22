@@ -317,7 +317,36 @@ nav:hover .nav-text {
   display: inline-block;
   opacity: 1;
   transition: 0.5s;
-  
+}
+
+li.home, li.two-door, li.four-door, li.motorcycle, li.about{
+  transition: 0.9s ease;
+}
+
+/* Specific styles for different icons */
+li.home:hover .icon1 img {
+  filter: brightness(0) saturate(100%) invert(12%) sepia(100%) saturate(7480%) hue-rotate(359deg);
+  transition: filter 0.6s ease;
+}
+
+li.two-door:hover .icon2 img {
+  filter: brightness(0) saturate(100%) invert(12%) sepia(100%) saturate(7480%) hue-rotate(359deg);
+  transition: filter 0.6s ease;
+}
+
+li.four-door:hover .icon2 img {
+  filter: brightness(0) saturate(100%) invert(12%) sepia(100%) saturate(7480%) hue-rotate(359deg);
+  transition: filter 0.6s ease;
+}
+
+li.motorcycle:hover .icon2 img {
+  filter: brightness(0) saturate(100%) invert(12%) sepia(100%) saturate(7480%) hue-rotate(359deg);
+  transition: filter 0.6s ease;
+}
+
+li.about:hover .icon1 img {
+  filter: brightness(0) saturate(100%) invert(12%) sepia(100%) saturate(7480%) hue-rotate(359deg);
+  transition: filter 0.6s ease;
 }
 
 
@@ -426,4 +455,5 @@ nav:hover .nav-text {
     display: inline-block; /* Make the width dynamic based on content */
   }
 }
+
 
