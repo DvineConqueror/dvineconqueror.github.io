@@ -341,13 +341,14 @@ nav:hover .nav-text {
   background-color: #111111; /* Replace with your desired background color */
   width: 19rem; /* 320px */
   .topNav{
-    margin-top: -27vh;
+    margin-top: -20vh;
     margin-right: 3000px;
     top: 0;
     width: 19rem;
-    height: 210px;
+    height: 120px;
     opacity: 1;
     transition: 0.2s ease-in-out;
+    margin-bottom: 30px;
   }
 }
 

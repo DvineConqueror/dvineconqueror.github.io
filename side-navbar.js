@@ -25,6 +25,30 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
+  const updateActiveNav = () => {
+    let current = "";
+  
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      const windowHeight = window.innerHeight;
+  
+      if (window.pageYOffset >= sectionTop - windowHeight / 2 && window.pageYOffset < sectionTop + sectionHeight - windowHeight / 2) {
+        current = section.getAttribute("id");
+      }
+    });
+  
+    navLinks.forEach((link) => {
+      link.classList.remove("active");
+      if (link.getAttribute('href').substring(1) === current) {
+        link.classList.add("active");
+      }
+    });
+  };
+  
+
+  window.addEventListener('scroll', updateActiveNav);
+
   toggleNav.addEventListener('click', (event) => {
     event.stopPropagation();
     toggleSideNav();
@@ -32,12 +56,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   navItems.forEach(function(navItem) {
     navItem.addEventListener('click', function() {
-      // Remove the 'active' class from all navigation items
       navItems.forEach(function(item) {
         item.classList.remove('active');
       });
-
-      // Add the 'active' class to the clicked navigation item
       this.classList.add('active');
     });
   });
@@ -66,4 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  // Initially update the active navigation link on page load
+  updateActiveNav();
 });

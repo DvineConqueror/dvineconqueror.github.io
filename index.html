@@ -15,19 +15,21 @@
     <script src="https://kit.fontawesome.com/5e0c6ec25d.js" crossorigin="anonymous"></script>
     <script src="side-navbar.js"></script>
     <script src="script.js"></script>
+    <script src="scroll-script.js"></script>
 </head>
 <body>
     <div>
+      <section id="Home-Page">
       <div class="bg-video-container" id="top">
         <video class="bg-video" autoplay loop muted>
             <source src="resources/lafbg.mp4" type="video/mp4">
         </video>
           <div class="text">
-            <a id="Home-Page"></a>
             <h1>Legendary Motorsport</h1>
             <h2>What we drive says a lot about who we are</h2>
           </div>
       </div>
+      </section>
  
       <div class="top">
         <div class="search-container">
@@ -42,8 +44,11 @@
           <img src="resources/background.png" alt="Background Image">
         </div>
  
+        
         <div class="2DoorCars">
-          <h1 class="heading"><a id="2DoorCars">2 Door Cars</a></h1>
+          <section id="2DoorCars">
+            <h1 class="heading">2 Door Cars</h1>
+          </section>
             <ul class="cards">
               <li class="cards_item">
                 <div class="card">
@@ -53,7 +58,6 @@
                     <p class="card_text">Precision meets luxury in the track-ready BMW M4 CSL, redefining performance with agility and refinement.</p>
                     <div class="card_content_footer">
                       <button class="btn card_btn"><a href="Pages/BMWm4.html">View More</a></button>
-                      
                     </div>
                   </div>
                 </div>
@@ -120,9 +124,11 @@
               </li>
             </ul>
         </div>
- 
+
         <div class="FourDoorCars">
-          <h1 class="heading"><a id="4DoorCars">4 Door Cars</a></h1>
+          <section id="4DoorCars">
+            <h1 class="heading">4 Door Cars</h1>
+          </section>
             <ul class="cards">
               <li class="cards_item">
                 <div class="card">
@@ -198,9 +204,12 @@
               </li>
             </ul>
         </div>
- 
+
+      
         <div class="motorcycles">
-          <h1 class="heading"><a id="Motorcles">Motorcycles</a></h1>
+          <section id="Motorcycles">
+            <h1 class="heading">Motorcycles</h1>
+          </section>
             <ul class="cards">
               <li class="cards_item">
                 <div class="card">
@@ -277,12 +286,15 @@
               </li>
             </ul>
         </div>
- 
+
+      
         <div class="about-container">
           <div class="about">
             <div class="header">
-              <h1 class="heading"><a id="About-Us">About Us</a></h1>
-              <h1 class="heading description"><a id="About-Us">Welcome to Legendary Motorsports, your ultimate destination for all things automotive. As a virtual brochure and wiki rolled into one, we're here to fuel your passion for vehicles and provide you with the knowledge you need to make informed decisions.</a></h1>
+              <section id="About-Us">
+                <h1 class="heading">About Us</h1>
+              </section>
+              <h1 class="heading description">Welcome to Legendary Motorsports, your ultimate destination for all things automotive. As a virtual brochure and wiki rolled into one, we're here to fuel your passion for vehicles and provide you with the knowledge you need to make informed decisions.</h1>
             </div>
               <ul class="cards">
                 <li class="cards_item">
@@ -369,7 +381,7 @@
               </ul>
           </div>
         </div>
- 
+
     <nav class="mobile-nav">
       <a href="#2DoorCars" class="nav-item" id="nav-2door">
         <i class="icon icon2">
@@ -384,7 +396,7 @@
       <a href="#top" class="nav-item active" id="nav-home">
         <i class="icon fa fa-home" style="font-size: 30px;"></i>
       </a>
-      <a href="#Motorcles" class="nav-item" id="nav-motorcycle">
+      <a href="#Motorcycles" class="nav-item" id="nav-motorcycle">
         <i class="icon icon2">
           <img src="resources/icons/motorcycle-icon-inverted.png" alt="" class="w-8 h-8" style="width: auto; height: 40px;">
         </i>
@@ -397,83 +409,97 @@
       <!-- Add more navigation items as needed -->
     </nav>
  
-    <div class="fixed top-0 left-0 flex h-screen">
+    <div class="fixed top-0 left-0 flex h-screen upper">
       <nav class="side-nav">
-          <ul class="flex flex-col justify-center h-screen space-y-10">
-            <div class="topNav">
-              <section id="home-section">
-                <li>
-                    <a class="flex items-start">
-                        <svg id="toggle-nav" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="250" height="50" fill="currentColor" className="w-6 h-6" class="double-arrow">
-                            <path fillRule="evenodd" d="M10.72 11.47a.75.75 0 0 0 0 1.06l7.5 7.5a.75.75 0 1 0 1.06-1.06L12.31 12l6.97-6.97a.75.75 0 0 0-1.06-1.06l-7.5 7.5Z" clipRule="evenodd" />
-                            <path fillRule="evenodd" d="M4.72 11.47a.75.75 0 0 0 0 1.06l7.5 7.5a.75.75 0 1 0 1.06-1.06L6.31 12l6.97-6.97a.75.75 0 0 0-1.06-1.06l-7.5 7.5Z" clipRule="evenodd" />
-                          </svg>                              
-                        <span class="whitespace-nowrap text-2xl ml-4 nav-text text-red-600 duration-200 absolute" id="up-level"><br>Legendary<br>Motorsports</span>
-                    </a>
-                </li>
-              </section>  
-            </div>
-                <li>
-                    <a href="#top" class="flex items-start hover:text-red-600 relative active home">
-                        <span class="icon-container">
-                            <i class="icon icon1">
-                                <img src="resources/icons/home-icon.png" alt="" class="w-8 h-8">
-                            </i>
-                        </span>
-                        <span class="whitespace-nowrap text-2xl ml-4 nav-text hidden duration-200 absolute left-12">Home</span>
-                    </a>
-                </li>
-              <section id="2door-section">
-                <li>
-                    <a href="#2DoorCars" class="flex items-start hover:text-red-600 relative">
-                        <span class="icon-container">
-                            <i class="icon icon2">
-                                <img src="resources/icons/2-door-icon.png" alt="" class="w-8 h-8">
-                            </i>
-                        </span>
-                        <span class="whitespace-nowrap text-2xl ml-4 nav-text hidden duration-200 absolute left-12">2 Door</span>
-                    </a>
-                </li>
-              </section>
-              <section id="4door-section">
-                <li>
-                    <a href="#4DoorCars" class="flex items-start hover:text-red-600 relative">
-                        <span class="icon-container">
-                            <i class="icon icon2">
-                                <img src="resources/icons/4-door-icon.png" alt="" class="w-8 h-8">
-                            </i>
-                        </span>
-                        <span class="whitespace-nowrap text-2xl ml-24 nav-text hidden duration-200 absolute left-12">  4 Door</span>
-                    </a>
-                </li>
-              </section> 
-              <section id="motorcycle-section">
-                <li>
-                    <a href="#Motorcles" class="flex items-start hover:text-red-600 relative">
-                        <span class="icon-container">
-                            <i class="icon icon2">
-                                <img src="resources/icons/motorcycle-icon.png" alt="" class="w-8 h-8">
-                            </i>
-                        </span>
-                        <span class="whitespace-normal text-2xl ml-4 nav-text hidden duration-200 absolute left-12">Motorcycle</span>
-                    </a>
-                </li>
-              </section>
-              <section id="about-section">
-                <li>
-                    <a href="#About-Us" class="flex items-start hover:text-red-600 relative">
-                        <span class="icon-container">
-                            <i class="icon icon1">
-                                <img src="resources/icons/about-icon.png" alt="" class="w-8 h-8">
-                            </i>
-                        </span>
-                        <span class="whitespace-nowrap text-2xl ml-4 nav-text hidden duration-200 absolute left-12">About Us</span>
-                    </a>
-                </li>
-              </section>
-          </ul>
+        <ul class="flex flex-col justify-center h-screen space-y-10">
+          <div class="topNav">
+            <section id="home-section">
+              <li>
+                <a class="flex items-start">
+                  <svg id="toggle-nav" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="250" height="50" fill="currentColor" className="w-6 h-6" class="double-arrow">
+                    <path fillRule="evenodd" d="M10.72 11.47a.75.75 0 0 0 0 1.06l7.5 7.5a.75.75 0 1 0 1.06-1.06L12.31 12l6.97-6.97a.75.75 0 0 0-1.06-1.06l-7.5 7.5Z" clipRule="evenodd" />
+                    <path fillRule="evenodd" d="M4.72 11.47a.75.75 0 0 0 0 1.06l7.5 7.5a.75.75 0 1 0 1.06-1.06L6.31 12l6.97-6.97a.75.75 0 0 0-1.06-1.06l-7.5 7.5Z" clipRule="evenodd" />
+                  </svg>
+                  <span class="whitespace-nowrap text-2xl ml-4 nav-text text-red-600 duration-200 absolute" id="up-level"><br>Legendary<br>Motorsports</span>
+                </a>
+              </li>
+            </section>
+          </div>
+          <li>
+            <a href="#Home-Page" class="flex items-start hover:text-red-600 relative active home">
+              <span class="icon-container">
+                <i class="icon icon1">
+                  <img src="resources/icons/home-icon.png" alt="" class="w-8 h-8">
+                </i>
+              </span>
+              <span class="whitespace-nowrap text-2xl ml-4 nav-text hidden duration-200 absolute left-12">Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#2DoorCars" class="flex items-start hover:text-red-600 relative">
+              <span class="icon-container">
+                <i class="icon icon2">
+                  <img src="resources/icons/2-door-icon.png" alt="" class="w-8 h-8">
+                </i>
+              </span>
+              <span class="whitespace-nowrap text-2xl ml-4 nav-text hidden duration-200 absolute left-12">2 Door</span>
+            </a>
+          </li>
+          <li>
+            <a href="#4DoorCars" class="flex items-start hover:text-red-600 relative">
+              <span class="icon-container">
+                <i class="icon icon2">
+                  <img src="resources/icons/4-door-icon.png" alt="" class="w-8 h-8">
+                </i>
+              </span>
+              <span class="whitespace-nowrap text-2xl ml-24 nav-text hidden duration-200 absolute left-12">4 Door</span>
+            </a>
+          </li>
+          <li>
+            <a href="#Motorcycles" class="flex items-start hover:text-red-600 relative">
+              <span class="icon-container">
+                <i class="icon icon2">
+                  <img src="resources/icons/motorcycle-icon.png" alt="" class="w-8 h-8">
+                </i>
+              </span>
+              <span class="whitespace-normal text-2xl ml-4 nav-text hidden duration-200 absolute left-12">Motorcycle</span>
+            </a>
+          </li>
+          <li>
+            <a href="#About-Us" class="flex items-start hover:text-red-600 relative">
+              <span class="icon-container">
+                <i class="icon icon1">
+                  <img src="resources/icons/about-icon.png" alt="" class="w-8 h-8">
+                </i>
+              </span>
+              <span class="whitespace-nowrap text-2xl ml-4 nav-text hidden duration-200 absolute left-12">About Us</span>
+            </a>
+          </li>
+        </ul>
       </nav>
-  </div>
+    </div>
+
+    <script>
+      let section = document.querySelectorAll('section');
+      let sideNavLink = document.querySelectorAll('upper nav a')
+
+      window.onscroll = () =>{
+        section.forEach(sec => {
+          let top = window.scrollY;
+          let offset = window.offsetTop;
+          let height = window.offsetHeight;
+          let id = sec.getAttribute('id');
+
+          if (top >= offset && top < offset + height){
+            sideNavLink.forEach(links => {
+              links.classList.remove('active');
+              document.querySelector('upper nav a[href*=' + id + ']').classList.add('active');
+            });
+          }
+        });
+      }
+
+    </script>
  
     <script>
       const searchIcon = document.getElementById('search-icon');
@@ -488,7 +514,5 @@
         }
       });
     </script>
- 
-    <script src="scroll-script.js"></script>
 </body>
 </html>
