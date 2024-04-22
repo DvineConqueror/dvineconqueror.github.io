@@ -8,6 +8,7 @@
 
 
 .cars-img {
+  pointer-events: none;
   height: 100%;
   max-width: 100%;
   vertical-align: middle;
@@ -66,6 +67,10 @@
   width: 100%;
 }
 
+.left-card{
+  margin-left: 150px;
+}
+
 @media (min-width: 40rem) {
   .cards_item {
     width: 50%;
@@ -86,6 +91,18 @@
   .heading{
     margin-left: 32px;
     font-size: 52px;
+  }
+
+  .card{
+    width: calc(33.33% - 20px); /* Adjust width for three cards per row with spacing */
+    margin-right: 20px; /* Add spacing between cards */
+  }
+
+  .left-card{
+    display: flex;
+  margin: 10px;
+  padding: 1rem 0; /* This line is modified */
+  width: 100%;
   }
 }
 
@@ -117,11 +134,6 @@
   align-items: center;
 }
 
-.stars {
-  color: gold;
-  font-size: 15px;
-}
-
 @keyframes gradient-animation {
   0% {
     background-position: 0% 50%;
@@ -135,6 +147,7 @@
 }
 
 .card_title {
+  text-align: center;
   color: #ffffff;
   font-size: 1.1rem;
   font-weight: 700;
@@ -144,6 +157,7 @@
 }
 
 .card_text {
+  text-align: center;
   color: #ffffff;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -151,11 +165,16 @@
   font-weight: 400;
 }
 
+
 .FourDoorCars{
   margin-top: 600px; /* Remove the negative margin-top */
 }
 
 .motorcycles{
+  margin-top: 600px; /* Remove the negative margin-top */
+}
+
+.about{
   margin-top: 600px; /* Remove the negative margin-top */
 }
 
