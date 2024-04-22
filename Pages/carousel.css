@@ -112,7 +112,7 @@
 }
 
 .product-description {
-  top: 10%;
+  top: 1.5%;
   color: white;
   position: absolute;
   left: 71%;
@@ -121,13 +121,14 @@
 }
 
 .product-description h1 {
-  margin-bottom: 9px;
-  font-size: 45px;
+  margin-bottom: 30px;
+  font-size: calc(1vw + 20px);
   font-family: "Kanit", sans-serif;
   font-weight: 700;
 }
 
 .product-description p {
+  margin-bottom: 2-px;
   font-size: 16px; /* Adjust font size as needed */
   line-height: 1.5; /* Improve readability with line spacing */
   color: #ddd; /* Lighter text color to contrast with the red title */
@@ -137,7 +138,7 @@
   font-size: 30px;
   font-family: "Kanit", sans-serif;
   font-weight: 700;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .stats-container {
